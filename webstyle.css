@@ -1,0 +1,33 @@
+*{font-family: 'Roboto', sans-serif;}
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.info-col {
+    flex-basis: 0%;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    margin-bottom: 50px;
+}
+.info-col h2 {
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+.info-col p {
+    font-weight: 400;
+    text-align: left;
+    max-width: 100%;
+}
+.info-col p1 {
+    font-weight: 700; 
+    text-align: center; 
+    color: white;
+    padding: 3px;
+    background-color: darkgoldenrod;
+}
+.info-col li {
+    padding: 2px;
+}
