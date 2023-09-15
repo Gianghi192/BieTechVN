@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url(Roboto/Roboto-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* CSS cho hình nền */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(IM/backround.jpg);
+    background-size: cover; /* hoặc background-size: 100% auto; */
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+
+/* CSS cho sidebar menu */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Đẩy thanh menu ra ngoài phạm vi ban đầu (ẩn) */
+    background-color: #333;
+    overflow-x: hidden;
+    transition: left 0.5s; /* Sử dụng transition cho thuộc tính left */
+    z-index: 1; /* Đặt z-index để đảm bảo thanh menu nằm trên hình nền */
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+    margin-top: 60px; /* Thêm margin-top để tạo khoảng cách với nút Menu */
+}
+
+.menu li {
+    padding: 15px;
+    position: relative; /* Để tạo không gian cho bullet */
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.menu li a:hover {
+    text-decoration: underline; /* Thêm dấu gạch chân khi đưa chuột vào */
+}
+
+/* CSS cho nút mở menu */
+.menu-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    color: yellow;
+    font-size: 24px;
+    z-index: 2; /* Đặt z-index để đảm bảo nút mở menu nằm trên hình nền */
+    margin-right: 10px; /* Thêm margin bên phải để tạo khoảng cách với chữ Home */
+}
+
+/* CSS cho danh sách menu */
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+    margin-top: 60px; /* Thêm margin-top để tạo khoảng cách với nút Menu */
+}
+
+.menu li {
+    padding: 15px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+/* CSS cho nội dung trang */
+.content {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    position: relative;
+}
+
+.custom-heading {
+    font-family: 'Roboto', sans-serif; /* Sử dụng font "Roboto" cho từ "WELCOME TO ESCAPE ROOM" */
+    color: yellow;
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+
+.play-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.play-button:hover {
+    background-color: red;
+}
+
+/* Hiệu ứng trượt khi thanh menu xuất hiện */
+.sidebar.show {
+    left: 0;
+}
+
+/* CSS cho footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-item {
+    text-align: center;
+}
+
+.footer-item h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* CSS cho phần feedback */
+.feedback {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.feedback h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.feedback a {
+    color: yellow;
+    text-decoration: none;
+}
+
+.feedback a:hover {
+    text-decoration: underline;
+}
