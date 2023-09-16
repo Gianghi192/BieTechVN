@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     src: url(Roboto/Roboto-Regular.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -8,10 +8,10 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url(IM/backround.jpg);
+    background-image: url(pimages/backround.jpg);
     background-size: cover;
     background-position: center;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -21,7 +21,7 @@ body {
     position: fixed;
     top: 0;
     left: -250px; 
-    background-color: #333;
+    background-color: black;
     overflow-x: hidden;
     transition: left 0.5s; 
     z-index: 1; 
@@ -41,7 +41,7 @@ body {
 }
 
 .menu li a {
-    color: white;
+    color: darkgoldenrod;
     text-decoration: none;
     display: block;
 }
@@ -55,7 +55,7 @@ body {
     top: 10px;
     left: 10px;
     cursor: pointer;
-    color: yellow;
+    color: darkgoldenrod;
     font-size: 24px;
     z-index: 2; 
     margin-right: 10px;
@@ -74,7 +74,7 @@ body {
 }
 
 .menu li a {
-    color: white;
+    color: darkgoldenrod;
     text-decoration: none;
     display: block;
 }
@@ -94,7 +94,7 @@ body {
 
 .custom-heading {
     font-family: 'Roboto', sans-serif;
-    color: yellow;
+    color: darkgoldenrod;
     font-size: 70px;
     font-weight: bold;
     text-transform: uppercase;
@@ -104,18 +104,19 @@ body {
 
 
 .play-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: white;
-    color: black;
+    padding: 20px 30px;
+    font-size: 25px;
+    color: white;
+    background-color: goldenrod;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 20px;
+    font-weight: 500;
 }
 
 .play-button:hover {
-    background-color: red;
+    background-color: darkgoldenrod;
 }
 
 .sidebar.show {
