@@ -1,0 +1,119 @@
+.intro {
+    margin: 0;
+    padding: 0;
+    background-image: url(pimages/backround.play-button);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px; 
+    background-color: black;
+    overflow-x: hidden;
+    transition: left 0.5s; 
+    z-index: 1; 
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+    margin-top: 60px;
+}
+
+.menu li {
+    padding: 15px;
+    position: relative;
+}
+
+.menu li a {
+    color: darkgoldenrod;
+    text-decoration: none;
+    display: block;
+    font-weight: 700;
+}
+
+.menu li a:hover {
+    text-decoration: underline; 
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    color: darkgoldenrod;
+    font-size: 24px;
+    z-index: 2; 
+    margin-right: 10px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+    margin-top: 60px; 
+}
+
+.menu li {
+    padding: 15px;
+}
+
+.menu li a {
+    color: darkgoldenrod;
+    text-decoration: none;
+    display: block;
+}
+
+.content {
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    position: relative;
+}
+
+.custom-heading {
+    font-family: 'Roboto', sans-serif;
+    color: darkgoldenrod;
+    font-size: 70px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+
+.play-button {
+    padding: 20px 30px;
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+    background-color: goldenrod;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.play-button:hover {
+    background-color: darkgoldenrod;
+}
+
+.sidebar.show {
+    left: 0;
+}
