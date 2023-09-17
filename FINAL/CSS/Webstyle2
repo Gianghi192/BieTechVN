@@ -1,0 +1,194 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.FAQs {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #fae4ae;
+    max-width: 100%;
+    margin: auto;
+    
+}
+.FAQs h2{
+    text-align: center;
+    margin: 1.5rem;
+    color: darkgoldenrod;
+    font-size: 30px;
+}
+.faqs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    background-color: #fae4ae;
+}
+.accordion{
+    background-color: white;
+    color: rgba(0,0,0,0.8);
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;
+    padding: 2rem 2.5rem;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.accordion:hover {
+    color: #f1b31b;
+}
+.accordion i{
+    font-size: 1.6rem;
+}
+.active,.accordion:hover {
+    background-color:white;
+}
+.pannel {
+    padding: 0 2rem 2.5rem 2rem;
+    overflow: hidden;
+    background-color: white;
+    display: none;
+}
+.pannel p{
+    color: rgba(0,0,0,0.7);
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+.faqs-container {
+    border: 1px solid rgba(0,0,0,0.2);
+    margin: 10px 0;
+    max-width: 80%;
+    margin-left: 12.5%;   
+    margin-right: 12.5%;
+    display: block;
+    justify-content: space-evenly;
+    background-color: white;
+    
+}
+.faqs-container.active{
+    border: none;
+}
+.testimonials {
+    background: #fae4ae;
+}
+.container {
+    margin: auto;
+    padding: 0 15px;
+}
+.section-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.section-header h2{
+    font-size: 30px;
+    color: darkgoldenrod;
+}
+.section-header p{
+    font-size: 20px;
+}
+.testimonials-item{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.testimonials-item .info{
+    display: flex;
+    align-items: center;
+    line-height: 2rem;
+}
+.testimonials-item img{
+    height: 120px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+}
+.testimonials-item .rating{
+    margin-top: 15px;
+    font-size: 14px;
+    color: hsl(36,88%,66%)
+}
+.testimonials-item p{
+    margin-top: 20px;
+}
+.testimonials .swiper-pagination {
+    position: relative;
+    margin-top: 20px;
+    bottom: auto;
+}
+.footer {
+    width: 100%;
+    position: absolute;
+    background-color: #fcf0d4;
+    padding: 30px 20px 30px 20px;
+    border-top-left-radius: 50px;
+    font-size: 30px;
+    line-height: 20px;
+    margin-top: 0px;
+    font-size: 30px;
+}
+.footer-row {
+    width: 85%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-col {
+    padding: 10px;
+}
+.footer-col h2 {
+    width: fit-content;
+    font-size: 30px;
+    color: darkgoldenrod;
+    margin-bottom: 20px;
+    position: relative;
+}
+.footer-col p{
+    font-size: 20px;
+    color: black;
+    padding-top: 20px;
+}
+.footer-col form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.footer-col form .fa-regular{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.footer-col form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none; 
+}
+.footer-col form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+.footer-col form button .fas{
+    font-size: 20px;
+    color: #ccc;
+}
+.footer-col .social-icons .fa-brands{
+    width: 50px;
+    display: inline-block;
+}
+.fa-brands, .fab{
+    width: 50px;
+}
