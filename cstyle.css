@@ -4,18 +4,18 @@
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
-.FAQS {
+.FAQs {
     padding-top: 2rem;
     padding-bottom: 2rem;
     background-color: #fae4ae;
-    max-width: 75%;
+    max-width: 100%;
     margin: auto;
     
 }
 .FAQs h2{
     text-align: center;
     margin: 1.5rem;
-    color: #f1b31b;
+    color: darkgoldenrod;
     font-size: 30px;
 }
 .faqs {
@@ -24,6 +24,7 @@
     gap: 1rem;
     padding-bottom: 1rem;
     padding-top: 1rem;
+    background-color: #fae4ae;
 }
 .accordion{
     background-color: white;
@@ -47,12 +48,12 @@
     font-size: 1.6rem;
 }
 .active,.accordion:hover {
-    background-color:#fae4ae ;
+    background-color:white;
 }
 .pannel {
     padding: 0 2rem 2.5rem 2rem;
     overflow: hidden;
-    background-color: #fae4ae;
+    background-color: white;
     display: none;
 }
 .pannel p{
@@ -63,6 +64,13 @@
 .faqs-container {
     border: 1px solid rgba(0,0,0,0.2);
     margin: 10px 0;
+    max-width: 80%;
+    margin-left: 12.5%;   
+    margin-right: 12.5%;
+    display: block;
+    justify-content: space-evenly;
+    background-color: white;
+    
 }
 .faqs-container.active{
     border: none;
@@ -81,7 +89,7 @@
 }
 .section-header h2{
     font-size: 30px;
-    color: #f1b31b;
+    color: darkgoldenrod;
 }
 .section-header p{
     font-size: 20px;
@@ -124,7 +132,7 @@
     border-top-left-radius: 50px;
     font-size: 30px;
     line-height: 20px;
-    margin-top: 20px;
+    margin-top: 0px;
     font-size: 30px;
 }
 .footer-row {
@@ -139,7 +147,7 @@
 .footer-col h2 {
     width: fit-content;
     font-size: 30px;
-    color: #f1b31b;
+    color: darkgoldenrod;
     margin-bottom: 20px;
     position: relative;
 }
